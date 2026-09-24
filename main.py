@@ -3,8 +3,9 @@ import json
 import threading
 from flask import Flask, jsonify, render_template
 import websocket
-
 app = Flask(__name__, template_folder="../frontend")
+
+
 
 # Deriv market symbol
 SYMBOL = os.getenv("DERIV_SYMBOL", "1HZ100V")
